@@ -1,0 +1,305 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('template.jpg'); 
+    width: 100%;
+    height: 100%; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.headlogo{
+    color: black;
+    text-decoration: none;
+}
+.headlogo:hover{
+    text-decoration: none;
+}
+
+.rightnav{
+	float: right;
+}
+
+.navbar{
+	border: 0.05em solid black;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0em; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    background-color: white;
+    z-index: 1;
+}
+
+.navbuttons{
+	border: none;
+	background-color: white;
+	margin: 0em 0.2em 0em 0.2em;
+	height: 4.5em;
+	width: 5em;
+}	
+
+.rightnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 56.25em) {
+    .rightnav button{display: none;}
+    .rightnav a.icon {
+      float: right;
+      display: block;
+    }
+}
+  
+@media screen and (max-width: 56.25em) {
+    .rightnav.responsive {position: relative;}
+    .rightnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .rightnav.responsive button {
+      float: none;
+      display: block;
+    }
+}
+
+.content{
+    margin-top: 15em;
+    width: 100%;
+}
+form{
+    text-align: center;
+}
+.locate{
+    padding: 0.3em;
+    border-radius: 0.2em;
+    border: 0.05em solid black;
+    width: 10em;
+}
+.locate:hover{
+    background-color: #e6e6e6;
+    font-weight: bold;
+}
+
+.sidecontent{
+    border: 0.05em solid black;
+    padding: 1em;
+    background-color: white;
+    margin: 0 2em;
+}
+.sidehead{
+    border: 0.05em solid black;
+    padding: 0.3em;
+    width: max-content;
+}
+.mainheader{
+    border: 0.05em solid black;
+    padding: 0.5em;
+    width: 95%;
+    text-align: right;
+    background-color: white;
+}
+.maincontent{
+    border: 0.05em solid black;
+    margin: 0.6em 0 0.6em 0;
+    padding: 0.9em 0 0.9em 0.9em;
+    width: 90%;
+    background-color: white;
+}
+.maincontent:hover{
+    box-shadow: 0 0 0.1em 0.05em rgba(0, 140, 186, 0.5);
+    background-color: #e6e6e6;
+}
+.mainhead{
+    text-align: center;
+}
+.icons{
+    padding: 0.5em;
+    height: 2em;
+    border: 0.05em solid black;
+}
+.icons:hover{
+    background-color: #e6e6e6;
+}
+.contents{
+    margin-top: 4em;
+    width: 100%;
+}
+.searchbox {
+    height: 2em;
+    padding: 0.5em;
+}
+button:hover {
+    opacity: 0.8;
+}
+.cancelbtn {
+    width: auto;
+    padding: 0.5em 1em;
+    background-color: #f44336;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+.college-name{
+    border: 0.05em solid black;
+    padding: 0.5em;
+    background-color: whitesmoke;
+    width: max-content;
+}
+.college-rating{
+    border: 0.08em solid black;
+    padding: 1em;
+    background-color: whitesmoke;
+}
+#section1, #section2, #section3, #section4{
+    border: 0.15em solid black;
+    padding: 2em;
+}
+.extra-info{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.loginform {
+  border: 0.15em solid #f1f1f1;
+  background-color: white;
+  opacity: 0.9;
+  text-align: left;
+}
+
+.formboxes {
+  width: 100%;
+  padding: 0.6em 1.4em;
+  margin: 0.5em 0;
+  display: inline-block;
+  border: 0.05em solid #ccc;
+  box-sizing: border-box;
+}
+.formboxes:focus{
+    background-color: #ddd;
+}
+
+.submitbutton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.875em 1.25em;
+  margin: 0.5em 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.submitbutton:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 0.625em 1.125em;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 1.5em 0em 0.75em 0em;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 30%;
+}
+span.psw {
+  float: right;
+  padding-top: 1em;
+}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 18.75em) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+hr {
+    border: 0.05em solid #f1f1f1;
+    margin-bottom: 1.56em;
+}
+
+/* Full-width input fields */
+.signupboxes {
+    width: 100%;
+    padding: 0.94em;
+    margin: 0.3em 0 1.375em 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+.signupboxes:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for all buttons */
+.signupbtn, .resetbtn {
+    background-color: #4f87bc;
+    color: white;
+    padding: 0.875em 1.25em;
+    margin: 0.625em 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.signupbtn:hover, .resetbtn:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.resetbtn {
+    padding: 0.875em 1.25em;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.resetbtn, .signupbtn {
+    float: left;
+    width: 50%;
+}
+.signupform{
+    background-color: white;
+    padding: 1em;
+    text-align: left;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 18.75em) {
+    .cancelbtn, .signupbtn {
+        width: 100%;
+    }
+}
+
+.navigate{
+    position: fixed;
+    bottom: 3em;
+    right: 4em;
+    padding: 1em;
+    border-radius: 3em;
+    background-color: #e6e6e6;
+    border: 0.1em solid black;
+    z-index: 1;
+}
+
+.link{
+    text-decoration: none;
+}
+.link:hover{
+    text-decoration: none;
+}
+#top{
+    padding: 1em;
+}

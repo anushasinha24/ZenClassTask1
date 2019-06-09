@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Colleges Details">
+    <meta name="author" content="Anusha, Saranya, Ashwin">
+    <title>Nurture | Colleges</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Allura&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="custom.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="left">
+            <h1 style="font-family: 'Allura', cursive;"><a href="index.html" class="headlogo">N</a></h1>
+        </div>
+        <div class="rightnav" id="rightnav">
+            <button class="navbuttons" onclick="window.location.href='index.html'">Home</button>
+            <button class="navbuttons" onclick="window.location.href='page2.html'">Colleges</button>
+            <button class="navbuttons" onclick="window.location.href='page3.html'">About</button>
+            <button class="navbuttons" onclick="window.location.href='login.html'">Login</button>
+            <button class="navbuttons" onclick="window.location.href='signup.html'">Sign Up</button>
+            <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+                <i class="fa fa-bars" style="color: #000000"></i>
+            </a>
+        </div>
+    </nav>
+    <br/><br/>
+    <div class="contents">
+        <div class="row">
+            <div class="col-xs-3 col-lg-3">
+                <div class="sidecontent">
+                    <h5 class="sidehead">STREAM</h5>
+                    <input type="text" name="stream" class="searchbox" placeholder="FIND"/><i class="fa fa-search icons"></i><br/><br/>
+                    <input type="checkbox" name="branch"/>CSE<br/>
+                    <input type="checkbox" name="branch"/>ECE<br/>
+                    <input type="checkbox" name="branch"/>EEE<br/>
+                    <input type="checkbox" name="branch"/>Mechanical<br/>
+                    <input type="checkbox" name="branch"/>Physics<br/>
+                    <input type="checkbox" name="branch"/>Chemistry<br/>
+                    <input type="checkbox" name="branch"/>Mathematics<br/>
+                </div><br/><br/>
+                <div class="sidecontent">
+                    <h5 class="sidehead">PROGRAMME TYPE</h5>
+                    <input type="text" name="programme" class="searchbox" placeholder="FIND"/><i class="fa fa-search icons"></i><br/><br/>
+                    <input type="checkbox" name="type"/>B.Tech 4 Years<br/>
+                    <input type="checkbox" name="type"/>M.Tech 5 Years Integrated<br/>
+                    <input type="checkbox" name="type"/>B.A.<br/>
+                    <input type="checkbox" name="type"/>M.A.<br/>
+                    <input type="checkbox" name="type"/>B.Sc.<br/>
+                    <input type="checkbox" name="type"/>M.Sc.<br/>
+                </div><br/><br/>
+                <div class="sidecontent">
+                    <h5 class="sidehead">TYPE OF COURSE</h5>
+                    <input type="text" name="course" class="searchbox" placeholder="FIND"/><i class="fa fa-search icons"></i><br/><br/>
+                    <input type="checkbox" name="coursetype"/>Engineering<br/>
+                    <input type="checkbox" name="coursetype"/>Arts<br/>
+                    <input type="checkbox" name="coursetype"/>Science<br/>
+                </div><br/><br/>
+            </div>
+            <div class="col-xs-9 col-lg-9">
+                <div class="mainheader">
+                    SORT BY: &nbsp;&nbsp;<a href="#">Popularity</a>&nbsp;&nbsp;<a href="#">Rating</a>&nbsp;&nbsp;<a href="#">Fees</a>
+                </div><br/>
+                <div class="row">
+                    <div class="col-xs-12 col-lg-6">
+                        <div class="maincontent">
+                            <h3 class="mainhead">ANNA UNIVERSITY</h3><br/><br/>
+                            <h4 class="mainhead">COURSES AVAILABLE</h4><br/>
+                            <ul>
+                                <li>B.Tech Electrical Engineering</li>
+                                <li>B.A. English</li>
+                                <li>B.Arch (Bachelor of Architecture)</li>
+                                <li>B.Sc. Computer Science</li>
+                                <li>M.Tech Aeronautical Engineering</li>
+                                <li>Master of Business Administration (MBA)</li>
+                            </ul>
+                            <div class="mainhead">
+                                <button class="cancelbtn" onclick="window.location.href='page3.html#section1'">VIEW DETAILS</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-lg-6">
+                        <div class="maincontent">
+                            <h3 class="mainhead">VIT UNIVERSITY</h3><br/><br/>
+                            <h4 class="mainhead">COURSES AVAILABLE</h4><br/>
+                            <ul>
+                                <li>B.Tech Computer Science Engineering</li>
+                                <li>B.Tech Mechanical Engineering</li>
+                                <li>BBA LLB Hons.</li>
+                                <li>Hotel Management</li>
+                                <li>MCA</li>
+                                <li>B.Com.</li>
+                            </ul>
+                            <div class="mainhead">
+                                <button class="cancelbtn" onclick="window.location.href='page3.html#section2'">VIEW DETAILS</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-lg-6">
+                        <div class="maincontent">
+                            <h3 class="mainhead">SRM UNIVERSITY</h3><br/><br/>
+                            <h4 class="mainhead">COURSES AVAILABLE</h4><br/>
+                            <ul>
+                                <li>B.Tech Civil Engineering</li>
+                                <li>B.Tech Biotechnology</li>
+                                <li>B.Tech Automobile Engineering</li>
+                                <li>M.A. English</li>
+                                <li>M.Com.</li>
+                                <li>M.Sc. Computer Science</li>
+                            </ul>
+                            <div class="mainhead">
+                                <button class="cancelbtn" onclick="window.location.href='page3.html#section3'">VIEW DETAILS</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-lg-6">
+                        <div class="maincontent">
+                            <h3 class="mainhead">HINDUSTAN UNIVERSITY</h3><br/><br/>
+                            <h4 class="mainhead">COURSES AVAILABLE</h4><br/>
+                            <ul>
+                                <li>M.Tech Computer Science and Engineering</li>
+                                <li>M.Tech Information Technology</li>
+                                <li>Advanced Diploma in Autotronics</li>
+                                <li>B.Com Banking Management</li>
+                                <li>B.Des Fashion and Apparel Design</li>
+                                <li>M.Arch Housing</li>
+                            </ul>
+                            <div class="mainhead">
+                                <button class="cancelbtn" onclick="window.location.href='page3.html#section4'">VIEW DETAILS</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

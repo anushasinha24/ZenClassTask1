@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Colleges Details">
+    <meta name="author" content="Anusha, Saranya, Ashwin">
+    <title>Nurture</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Allura&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="custom.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="left">
+            <h1 style="font-family: 'Allura', cursive;"><a href="index.html" class="headlogo">N</a></h1>
+        </div>
+        <div class="rightnav" id="rightnav">
+            <button class="navbuttons" onclick="window.location.href='index.html'">Home</button>
+            <button class="navbuttons" onclick="window.location.href='page2.html'">Colleges</button>
+            <button class="navbuttons" onclick="window.location.href='page3.html'">About</button>
+            <button class="navbuttons" onclick="window.location.href='login.html'">Login</button>
+            <button class="navbuttons" onclick="window.location.href='signup.html'">Sign Up</button>
+            <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+                <i class="fa fa-bars" style="color: #000000"></i>
+            </a>
+        </div>
+    </nav>
+    <div class="content container-fluid">
+        <br><br><br>
+        <h1 style="text-align:center"><span style="font-family: 'Allura', cursive; ">N</span>urture</h1><br><br>
+        <div class="row">
+            <div class="col-xs-2 col-md-3"></div>
+            <div class="col-xs-8 col-md-6">
+                <form method="get" action="">
+                    <select class="form-control" id="location">
+                        <option value="---">Select Location</option>
+                        <option value="Anna">Chennai</option>
+                        <option value="VIT">Vellore</option>
+                        <option value="SRM">Madurai</option>
+                        <option value="Hindustan">Trichy</option>
+                    </select><br><br>
+                    <button class="locate" type="submit" onclick="return locate();" value="SEARCH">SEARCH</button>
+                </form>
+            </div>
+            <div class="col-xs-2 col-md-3"></div>
+        </div>
+    </div>
+</body>
+</html>
